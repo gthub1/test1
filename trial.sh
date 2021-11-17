@@ -14,6 +14,12 @@ exit 0
 fi
 clear
 IP=$(wget -qO- ipinfo.io/ip);
+source /var/lib/premium-script/ipvps.conf
+if [[ "$IP" = "" ]]; then
+domain=$(cat /etc/v2ray/domain)
+else
+domain=$IP
+fi
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
@@ -40,7 +46,7 @@ echo -e "Trial 1 Hari SSH & OpenVPN"
 echo -e "Username          : $Login "
 echo -e "Password          : $Pass"
 echo -e "==============================="
-echo -e "IP Server         : $IP"
+echo -e "IP Server         : $MYIP"
 echo -e "Host              : $domain"
 echo -e "OpenSSH           : 22, 500"
 echo -e "Dropbear          : 143, 109"
