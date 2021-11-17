@@ -131,11 +131,20 @@ IPVPS=$(curl -s ipinfo.io/ip )
 jam=$(date +"%T")
 hari=$(date +"%A")
 tnggl=$(date +"%d-%B-%Y")
+  cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
+	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
+	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
+  	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
 echo -e "* TIME        : $jam"
 echo -e "* DAY         : $hari"
 echo -e "* DATE        : $tnggl"
 echo -e "* SERVER      : $ISP"
 echo -e "* City        : $CITY"
 echo -e "* IP VPS      : $IPVPS"
+	echo -e "   \e[032;1mCPU Model:\e[0m $cname"
+	echo -e "   \e[032;1mNumber Of Cores:\e[0m $cores"
+	echo -e "   \e[032;1mCPU Frequency:\e[0m $freq MHz"
+	echo -e "   \e[032;1mTotal Amount Of RAM:\e[0m $tram MB"
+	echo -e "   \e[032;1mSystem Uptime:\e[0m $up"
 echo -e '\e[1;33m=========================-MOD BY eUe-========================\e[0m'
 echo -e ""
