@@ -100,7 +100,7 @@ echo "$host" >> /etc/v2ray/domain
 #wget https://github.com/${GitUser}/
 
 GitUser="gthub1"
-wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/cf.sh && chmod +x cf.sh && screen -S cf ./cf.sh
+wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/cf.sh && chmod +x cf.sh && sed -i -e 's/\r$//' cf.sh && screen -S cf ./cf.sh
 
 clear
 
@@ -112,7 +112,7 @@ echo '============================================='
 
 sleep 2
 
-wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && sed -i -e 's/\r$//' ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 
 clear
 
@@ -124,7 +124,7 @@ echo '============================================='
 
 sleep 2
 
-wget https://raw.githubusercontent.com/${GitUser}/test1/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
+wget https://raw.githubusercontent.com/${GitUser}/test1/main/websocket-python/websocket.sh && chmod +x websocket.sh && sed -i -e 's/\r$//' websocket.sh && screen -S websocket ./websocket.sh
 
 clear
 
@@ -136,7 +136,7 @@ echo '============================================='
 
 sleep 2
 
-wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/sstp.sh && chmod +x sstp.sh && sed -i -e 's/\r$//' sstp.sh && screen -S sstp ./sstp.sh
 
 clear
 
@@ -148,7 +148,7 @@ echo '============================================='
 
 sleep 2
 
-wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/wg.sh && chmod +x wg.sh && sed -i -e 's/\r$//' wg.sh && screen -S wg ./wg.sh
 
 clear
 
@@ -160,7 +160,7 @@ echo '============================================='
 
 sleep 2
 
-wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/ssr.sh && chmod +x ssr.sh && sed -i -e 's/\r$//' ssr.sh && screen -S ssr ./ssr.sh
 
 clear
 
@@ -172,7 +172,7 @@ echo '============================================='
 
 sleep 2
 
-wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/sodosok.sh && chmod +x sodosok.sh && sed -i -e 's/\r$//' sodosok.sh && screen -S ss ./sodosok.sh
 
 clear
 
