@@ -33,7 +33,7 @@ clear
 echo -e ""
 echo -e "=============-Trojan-============"
 echo -e "Remarks        : ${user}"
-echo -e "IP	            : ${IP}"
+echo -e "IP	        : ${IP}"
 echo -e "Host           : ${domain}"
 echo -e "port           : ${tr}"
 echo -e "Key            : ${user}"
