@@ -198,8 +198,8 @@ sleep 2
 
 clear
 
-wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/set-br.sh && chmod +x set-br.sh && screen -S set-br ./set-br.sh
+wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/ipsec.sh && chmod +x ipsec.sh && sed -i -e 's/\r$//' ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/set-br.sh && chmod +x set-br.sh && sed -i -e 's/\r$//' set-br.sh && screen -S set-br ./set-br.sh
 
 rm -f /root/ssh-vpn.sh
 
