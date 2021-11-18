@@ -147,7 +147,7 @@ Install_SSR
 wget -O /usr/bin/ssr https://raw.githubusercontent.com/${GitUser}/test1/main/install/ssrmu.sh && chmod +x /usr/bin/ssr
 wget -O /usr/bin/addssr https://raw.githubusercontent.com/${GitUser}/test1/main/add/addssr.sh && chmod +x /usr/bin/addssr
 wget -O /usr/bin/delssr https://raw.githubusercontent.com/${GitUser}/test1/main/del/delssr.sh && chmod +x /usr/bin/delssr
-wget -O /usr/bin/xp-ssr https://raw.githubusercontent.com/${GitUser}/test1/main/xp/xpssr.sh && chmod +x /usr/bin/xpssr
+wget -O /usr/bin/xpssr https://raw.githubusercontent.com/${GitUser}/test1/main/xp/xpssr.sh && chmod +x /usr/bin/xpssr
 wget -O /usr/bin/renewssr https://raw.githubusercontent.com/${GitUser}/test1/main/renew/ressr.sh && chmod +x /usr/bin/ressr
 touch /usr/local/shadowsocksr/akun.conf
 rm -f /root/ssr.sh
