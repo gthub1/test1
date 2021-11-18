@@ -13,6 +13,10 @@ echo "Only For Premium Users"
 exit 0
 fi
 clear
+source /var/lib/premium-script/ipvps.conf
+if [[ "$IP" = "" ]]; then
+domain=$(cat /etc/v2ray/domain)
+fi
 IP=$(wget -qO- ipinfo.io/ip);
 lastport1=$(grep "port_tls" /etc/shadowsocks-libev/akun.conf | tail -n1 | awk '{print $2}')
 lastport2=$(grep "port_http" /etc/shadowsocks-libev/akun.conf | tail -n1 | awk '{print $2}')
@@ -89,8 +93,8 @@ service cron restart
 clear
 	echo -e ""
 	echo -e "=======-Shadowsocks-======="
-	echo -e "IP		        : $IP"
-	echo -e "Host		    : $domain"
+	echo -e "IP		: $MYIP"
+	echo -e "Host		: $domain"
 	echo -e "Port OBFS TLS  : $tls"
 	echo -e "Port OBFS HTTP : $http"
 	echo -e "Password       : $user"
