@@ -270,29 +270,29 @@ wget -O about "https://raw.githubusercontent.com/${GitUser}/test1/main/about.sh"
 wget -O menu "https://raw.githubusercontent.com/${GitUser}/test1/main/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/${GitUser}/test1/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/${GitUser}/test1/main/trial.sh"
+wget -O cek "https://raw.githubusercontent.com/${GitUser}/test1/main/cek.sh"
+wget -O renew "https://raw.githubusercontent.com/${GitUser}/test1/main/renew.sh"
 wget -O hapus "https://raw.githubusercontent.com/${GitUser}/test1/main/del/hapus.sh"
+wget -O delete "https://raw.githubusercontent.com/${GitUser}/test1/main/del/delete.sh"
 wget -O member "https://raw.githubusercontent.com/${GitUser}/test1/main/member.sh"
 wget -o wbmn "https://raw.githubusercontent.com/${GitUser}/test1/main/webmin.sh"
-wget -O delete "https://raw.githubusercontent.com/${GitUser}/test1/main/del/delete.sh"
-wget -O cek "https://raw.githubusercontent.com/${GitUser}/test1/main/cek.sh"
 wget -O restart "https://raw.githubusercontent.com/${GitUser}/test1/main/restart.sh"
 wget -O speedtest "https://github.com/${GitUser}/test1/raw/main/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/${GitUser}/test1/main/info.sh"
 wget -O ram "https://raw.githubusercontent.com/${GitUser}/test1/main/ram.sh"
-wget -O renew "https://raw.githubusercontent.com/${GitUser}/test1/main/renew.sh"
 wget -O autokill "https://raw.githubusercontent.com/${GitUser}/test1/main/autokick.sh"
 wget -O ceklim "https://raw.githubusercontent.com/${GitUser}/test1/main/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/${GitUser}/test1/main/tendang.sh"
 wget -O clear-log "https://raw.githubusercontent.com/${GitUser}/test1/main/clear-log.sh"
-wget -O change-port "https://raw.githubusercontent.com/${GitUser}/test1/main/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/${GitUser}/test1/main/port/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/${GitUser}/test1/main/port/port-ssl.sh"
-wget -O port-wg "https://raw.githubusercontent.com/${GitUser}/test1/main/port/port-wg.sh"
-wget -O port-tr "https://raw.githubusercontent.com/${GitUser}/test1/main/port/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/${GitUser}/test1/main/port/port-sstp.sh"
-wget -O port-squid "https://raw.githubusercontent.com/${GitUser}/test1/main/port/port-squid.sh"
-wget -O port-ws "https://raw.githubusercontent.com/${GitUser}/test1/main/port/port-ws.sh"
-wget -O port-vl "https://raw.githubusercontent.com/${GitUser}/test1/main/port/port-vl.sh"
+wget -O cport "https://raw.githubusercontent.com/${GitUser}/test1/main/cport.sh"
+wget -O povpn "https://raw.githubusercontent.com/${GitUser}/test1/main/port/povpn.sh"
+wget -O pssl "https://raw.githubusercontent.com/${GitUser}/test1/main/port/pssl.sh"
+wget -O pwg "https://raw.githubusercontent.com/${GitUser}/test1/main/port/pwg.sh"
+wget -O ptr "https://raw.githubusercontent.com/${GitUser}/test1/main/port/ptr.sh"
+wget -O psstp "https://raw.githubusercontent.com/${GitUser}/test1/main/port/psstp.sh"
+wget -O psquid "https://raw.githubusercontent.com/${GitUser}/test1/main/port/psquid.sh"
+wget -O pws "https://raw.githubusercontent.com/${GitUser}/test1/main/port/pws.sh"
+wget -O pvl "https://raw.githubusercontent.com/${GitUser}/test1/main/port/pvl.sh"
 wget -O kernel-updt "https://raw.githubusercontent.com/${GitUser}/test1/main/kernel-update.sh"
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
@@ -300,31 +300,31 @@ echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 chmod +x addhost
 chmod +x about
 chmod +x menu
-chmod +x usernew
 chmod +x trial
-chmod +x hapus
-chmod +x member
-chmod +x wbmn
-chmod +x delete
+chmod +x usernew
 chmod +x cek
+chmod +x member
+chmod +x renew
+chmod +x hapus
+chmod +x delete
+chmod +x wbmn
 chmod +x restart
 chmod +x speedtest
 chmod +x info
 chmod +x ram
-chmod +x renew
 chmod +x autokill
 chmod +x ceklim
 chmod +x tendang
 chmod +x clear-log
-chmod +x change-port
-chmod +x port-ovpn
-chmod +x port-ssl
-chmod +x port-wg
-chmod +x port-tr
-chmod +x port-sstp
-chmod +x port-squid
-chmod +x port-ws
-chmod +x port-vl
+chmod +x cport
+chmod +x povpn
+chmod +x pssl
+chmod +x pwg
+chmod +x ptr
+chmod +x psstp
+chmod +x psquid
+chmod +x pws
+chmod +x pvl
 chmod +x kernel-updt
 
 # remove unnecessary files
