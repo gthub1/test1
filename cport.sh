@@ -31,28 +31,28 @@ read -p "     Select From Options [1-8 or x] :  " port
 echo -e ""
 case $port in
 1)
-port-ssl
+pssl
 ;;
 2)
-port-ovpn
+povpn
 ;;
 3)
-port-wg
+pwg
 ;;
 4)
-port-ws
+pws
 ;;
 5)
-port-vl
+pvl
 ;;
 6)
-port-tr
+ptr
 ;;
 7)
-port-squid
+psquid
 ;;
 8)
-port-sstp
+psstp
 ;;
 x)
 clear
