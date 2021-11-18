@@ -336,17 +336,12 @@ echo ""  | tee -a log-install.txt
 echo "------------------------------------------Mod by eUe------------------------------------------" | tee -a log-install.txt
 
 echo '============================================='
-
 echo "     SISTEM AKAN REBOOT SEBENTAR LAGI!!"
-
 echo '============================================='
-
 echo " Terima Kasih Menggunakan AutoScript eUe "
-
 echo ""
-
 echo ""
-
+echo " Reboot 10 Sec"
+sleep 10
 rm -f setup.sh
-
-echo " Reboot Please"
+reboot
