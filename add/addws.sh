@@ -5,6 +5,8 @@ NC='\e[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 clear
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
 source /var/lib/premium-script/ipvps.conf
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/v2ray/domain)
@@ -70,6 +72,9 @@ service cron restart
 clear
 echo -e ""
 echo -e "==========-V2RAY/VMESS-=========="
+echo -e "City           : $CITY"
+echo -e "SERVER         : $ISP"
+echo -e "================================="
 echo -e "Remarks        : ${user}"
 echo -e "Host           : ${domain}"
 echo -e "IP             : ${MYIP}"
