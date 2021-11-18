@@ -281,14 +281,14 @@ GitUser="gthub1"
 #wget https://github.com/${GitUser}/
 wget -O /usr/bin/addl2tp https://raw.githubusercontent.com/${GitUser}/test1/main/add/addl2tp.sh && chmod +x /usr/bin/addl2tp
 wget -O /usr/bin/dell2tp https://raw.githubusercontent.com/${GitUser}/test1/main/del/dell2tp.sh && chmod +x /usr/bin/dell2tp
-wget -O /usr/bin/xp-l2tp https://raw.githubusercontent.com/${GitUser}/test1/main/xp/xpl2tp.sh && chmod +x /usr/bin/xpl2tp
+wget -O /usr/bin/xpl2tp https://raw.githubusercontent.com/${GitUser}/test1/main/xp/xpl2tp.sh && chmod +x /usr/bin/xpl2tp
 wget -O /usr/bin/addpptp https://raw.githubusercontent.com/${GitUser}/test1/main/add/addpptp.sh && chmod +x /usr/bin/addpptp
 wget -O /usr/bin/delpptp https://raw.githubusercontent.com/${GitUser}/test1/main/del/delpptp.sh && chmod +x /usr/bin/delpptp
-wget -O /usr/bin/xp-pptp https://raw.githubusercontent.com/${GitUser}/test1/main/xp/xppptp.sh && chmod +x /usr/bin/xppptp
-wget -O /usr/bin/renewpptp https://raw.githubusercontent.com/${GitUser}/test1/main/renew/repptp.sh && chmod +x /usr/bin/repptp
-wget -O /usr/bin/renewl2tp https://raw.githubusercontent.com/${GitUser}/test1/main/renew/rel2tp.sh && chmod +x /usr/bin/rel2tp
-touch /var/lib/crot-script/data-user-l2tp
-touch /var/lib/crot-script/data-user-pptp
+wget -O /usr/bin/xppptp https://raw.githubusercontent.com/${GitUser}/test1/main/xp/xppptp.sh && chmod +x /usr/bin/xppptp
+wget -O /usr/bin/repptp https://raw.githubusercontent.com/${GitUser}/test1/main/renew/repptp.sh && chmod +x /usr/bin/repptp
+wget -O /usr/bin/rewl2tp https://raw.githubusercontent.com/${GitUser}/test1/main/renew/rel2tp.sh && chmod +x /usr/bin/rel2tp
+touch /var/lib/premium-script/data-user-l2tp
+touch /var/lib/premium-script/data-user-pptp
 rm -f /root/ipsec.sh
 echo "0 0 * * * root xppptp" >> /etc/crontab
 echo "0 0 * * * root xpl2tp" >> /etc/crontab
