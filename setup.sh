@@ -305,6 +305,10 @@ echo "   - V2RAY Vmess TLS          : 8443"  | tee -a log-install.txt
 
 echo "   - V2RAY Vmess None TLS     : 80"  | tee -a log-install.txt
 
+echo "   - Vless TLS                : 2083"  | tee -a log-install.txt
+
+echo "   - Vless None TLS           : 880"  | tee -a log-install.txt
+
 echo "   - Trojan                   : 6443"  | tee -a log-install.txt
 
 echo ""  | tee -a log-install.txt
@@ -343,11 +347,6 @@ echo ""
 
 echo ""
 
-echo " Reboot 10 Sec"
-
-sleep 10
-
 rm -f setup.sh
 
-reboot
-
+echo " Reboot Please"
