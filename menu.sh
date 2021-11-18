@@ -22,6 +22,17 @@ On_Cyan='\033[46m'
 On_Red='\033[41m'
 NC='\e[0m'
 clear
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+WKT=$(curl -s ipinfo.io/timezone )
+IPVPS=$(curl -s ipinfo.io/ip )
+jam=$(date +"%T")
+hari=$(date +"%A")
+tnggl=$(date +"%d-%B-%Y")
+  cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
+	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
+	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
+  	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
 echo -e ""
 echo -e "${BGreen}=========================${NC}${On_Purple}-Menu-${NC}${BGreen}=========================${NC}"
 echo -e ""
@@ -124,17 +135,6 @@ echo -e "* ${Red}exit${NC}        : ${URed}Exit From VPS${NC}"
 echo -e ""
 echo -e "${BGreen}=======================================================${NC}"
 echo -e ""
-ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
-CITY=$(curl -s ipinfo.io/city )
-WKT=$(curl -s ipinfo.io/timezone )
-IPVPS=$(curl -s ipinfo.io/ip )
-jam=$(date +"%T")
-hari=$(date +"%A")
-tnggl=$(date +"%d-%B-%Y")
-  cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
-	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
-	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
-  	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
 echo -e "* TIME        : $jam"
 echo -e "* DAY         : $hari"
 echo -e "* DATE        : $tnggl"
