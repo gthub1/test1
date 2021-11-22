@@ -20,7 +20,7 @@ locality=Indonesia
 organization=Telekomsel
 organizationalunit=www.telekomsel.com
 commonname=www.telekomsel.com
-email=admin@vpnstores.net
+email=admin@telekomsel.com
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/${GitUser}/test1/main/password"
