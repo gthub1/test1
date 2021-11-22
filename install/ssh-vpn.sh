@@ -17,9 +17,9 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=www.vpnstores.net
-organizationalunit=www.vpnstores.net
-commonname=www.vpnstores.net
+organization=Telekomsel
+organizationalunit=www.telekomsel.com
+commonname=www.telekomsel.com
 email=admin@vpnstores.net
 
 # simple password minimal
