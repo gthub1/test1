@@ -20,7 +20,7 @@ locality=Indonesia
 organization=Telekomsel
 organizationalunit=www.telekomsel.com
 commonname=www.telekomsel.com
-email=admin@telekomsel.com
+email=cs@telekomsel.com
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/${GitUser}/test1/main/password"
@@ -270,7 +270,7 @@ wget -O about "https://raw.githubusercontent.com/${GitUser}/test1/main/about.sh"
 wget -O menu "https://raw.githubusercontent.com/${GitUser}/test1/main/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/${GitUser}/test1/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/${GitUser}/test1/main/trial.sh"
-wget -O cek "https://raw.githubusercontent.com/${GitUser}/test1/main/cek.sh"
+wget -O cek "https://raw.githubusercontent.com/${GitUser}/test1/main/cek/cek.sh"
 wget -O renew "https://raw.githubusercontent.com/${GitUser}/test1/main/renew.sh"
 wget -O hapus "https://raw.githubusercontent.com/${GitUser}/test1/main/del/hapus.sh"
 wget -O delete "https://raw.githubusercontent.com/${GitUser}/test1/main/del/delete.sh"
